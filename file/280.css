@@ -1,0 +1,756 @@
+@charset "UTF-8";
+/* 注意
+ * 修正・追加するスタイル設定はここに書く
+ * コメントで該当箇所や内容がわかるように区切ること
+ */
+
+/*====================================================================
+ 該当箇所名(コピーして使ってください)
+ ====================================================================*/
+.xxxxxx {
+
+}
+@media screen and (max-width: 768px) {
+  .xxxxxx {
+
+  }
+}
+
+/*====================================================================
+ フッター崩れ修正
+ ====================================================================*/
+footer .footer_inner .navigation {
+  width: auto;
+  max-width: 835px;
+}
+
+/*====================================================================
+ デフォルトテンプレート用
+ ====================================================================*/
+/*タイトル周り*/
+.container__default--template {
+  margin: 0 25px;
+}
+.container__default--template img {
+  vertical-align: text-bottom;
+  line-height: 1;
+  width: 100%;
+  height: auto;
+}
+.container__default--template .wrap__title {
+  position: relative;
+  height: 0;
+  min-height: 300px;
+  margin-bottom: 100px;
+  padding-top: 22%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.container__default--template .wrap__title__main {
+  width: 328px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 60px 0 0 0 !important;
+  position: absolute;
+  top: calc((100% - 200px) /2 );
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1c3f80;
+  text-align: center;
+}
+.container__default--template .wrap__title__main h2 {
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Futura';
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: .3em;
+  margin-bottom: 6%;
+}
+.container__default--template .wrap__title__main h2:before {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+}
+.container__default--template .wrap__title__main p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: .2em;
+}
+@media screen and (max-width: 768px) {
+  .container__default--template {
+    margin: 0;
+  }
+  .container__default--template .wrap__title {
+    min-height: 200px;
+    background-size: inherit;
+    margin-bottom: 11%;
+    padding-top: 42%;
+  }
+  .container__default--template .wrap__title__main {
+    width: 90%;
+    max-width: 328px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 40px 0 0 0 !important;
+    top: calc((100% - 150px) /2 );
+  }
+  .container__default--template .wrap__title__main h2 {
+    font-size: 18px;
+    margin-bottom: 6.5%;
+  }
+  .container__default--template .wrap__title__main p {
+    font-size: 12px;
+    margin-bottom: 3%;
+  }
+}
+/*コンテンツボックス 基本*/
+.container__default--template .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 140px;
+}
+.container__default--template .inner.pb70 {
+  padding-bottom: 70px;
+}
+.container__default--template .inner .defaultBox__cap {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.container__default--template .inner .defaultBox__cap p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 42px;
+}
+.container__default--template .inner .defaultBox__ttl {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.container__default--template .inner .defaultBox__ttl h3 {
+  font-weight: normal;
+  font-family: 'Futura';
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  margin: 0 0 20px;
+}
+.container__default--template .inner .defaultBox__ttl p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.container__default--template .inner .defaultBox__txt {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: .1em;
+  margin-bottom: 45px;
+}
+.container__default--template .inner .defaultBox__txt p {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: .1em;
+}
+@media screen and (max-width: 768px) {
+  .container__default--template .inner {
+    padding-bottom: 14%;
+  }
+  .container__default--template .inner.pb70 {
+    padding-bottom: 7%;
+  }
+  .container__default--template .inner .defaultBox__cap {
+    margin: 0 5% 12%;
+  }
+  .container__default--template .inner .defaultBox__cap p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .container__default--template .inner .defaultBox__ttl {
+    margin-bottom: 7%;
+  }
+  .container__default--template .inner .defaultBox__ttl h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 3%;
+  }
+  .container__default--template .inner .defaultBox__ttl p {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .container__default--template .inner .defaultBox__txt {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 5% 5%;
+  }
+  .container__default--template .inner .defaultBox__txt p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+/*====================================================================
+ テキスト選択　背景反転
+ ====================================================================*/
+::selection {
+  color: #ffffff;
+  background: #0099ff;
+}
+::-moz-selection {
+  color: #ffffff;
+  background: #0099ff;
+}
+
+/*====================================================================
+ iOS時のメニューホバーアニメーション削除クラス
+ ====================================================================*/
+.non_hover {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+.non_hover:before, .non_hover:after {
+  content: none !important;
+}
+
+/*====================================================================
+ グローバルナビゲーション　項目を増やしたことによる幅調整
+ ====================================================================*/
+.navigation {
+  width: calc(100% - 154px);
+}
+.navigation ul li {
+  margin-left: 2%;
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    width: 100%;
+  }
+  .navigation ul li {
+    margin: 0;
+  }
+}
+
+/*====================================================================
+ スマホ時ナビゲーション　調整　　注意：ナビの項目を増やすごとに調整が必要！
+ ====================================================================*/
+@media screen and (max-width: 768px) {
+  .navigation {
+    top: -600px;
+  }
+  .navigation.open {
+    -webkit-transform: translateY(650px);
+    -ms-transform: translateY(650px);
+    -moz-transform: translateY(650px);
+    -o-transform: translateY(650px);
+    transform: translateY(650px);
+  }
+}
+
+/*====================================================================
+ 一定幅でコピーライトとコンタクトを非表示
+ ====================================================================*/
+@media screen and (max-width: 1100px) {
+  footer .contact {
+    display: none;
+  }
+  footer .copyright {
+    position: static;
+    clear: both;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+}
+
+/*====================================================================
+ 最大幅　1000px
+ ====================================================================*/
+.mw1000 {
+  max-width: 1000px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*====================================================================
+ トップページ　幅調整
+ ====================================================================*/
+.container__home .section__service ul.list {
+  padding: 63px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  .container__home .section__service ul.list {
+    padding: 10% 5% 0;
+  }
+}
+
+/*====================================================================
+ コンタクトページ　幅調整
+ ====================================================================*/
+.container__contact .section__contact {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  .container__contact .section__contact {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/*====================================================================
+ 会社概要ページ　取締役略歴 崩れ修正
+ ====================================================================*/
+.container__company .section__team ul.list {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container__company .section__team ul.list li dl dd {
+  width: 74.1%;
+}
+@media screen and (max-width: 768px) {
+  .container__company .section__team ul.list li dl dd {
+    width: 100%;
+  }
+}
+
+/*====================================================================
+ 会社概要ページ　セクション１　テキスト　スマホ時左揃え
+ ====================================================================*/
+@media screen and (max-width: 768px) {
+  .container__company .section__introduction dl dd p {
+    text-align: left;
+  }
+}
+
+/*====================================================================
+ Webアプリページ　セクション１　テキスト　スマホ時左揃え
+ ====================================================================*/
+@media screen and (max-width: 768px) {
+  .container__service--common .section__service--info dl dd {
+    text-align: left;
+  }
+}
+
+/*====================================================================
+ スマホ時非表示化
+ ====================================================================*/
+@media screen and (max-width: 768px) {
+  .spNone {
+    display: none !important;
+  }
+}
+
+/*====================================================================
+ WPのエディターでbrが消えるのを防ぐダミークラス
+ ====================================================================*/
+.dummy_class {
+}
+
+/*====================================================================
+ スマホ時区切り線
+ ====================================================================*/
+.spLine {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .spLine {
+    width: 100%;
+    height: 0;
+    margin: 2em 0;
+    display: block;
+    border: none;
+    border-bottom: dotted 1px #d0d0d0;
+  }
+}
+
+/*====================================================================
+ スマホメニューボタンのサイズ調整
+ ====================================================================*/
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+    width: 50px;
+    height: 100%;
+    right: 0;
+  }
+  .nav-toggle span:nth-child(1) {
+    top: 16px;
+    left: 12px;
+  }
+  .nav-toggle span:nth-child(2) {
+    top: 24px;
+    left: 12px;
+  }
+  .nav-toggle span:nth-child(3) {
+    top: 32px;
+    left: 12px;
+  }
+}
+
+/*====================================================================
+ iOSでダブルタップしないとリンク反応しないバグ対応
+ ====================================================================*/
+.ios *:hover {
+  opacity: 1.0 !important;
+}
+@media screen and (max-width: 768px) {
+  .navigation ul li a:before, .navigation ul li a:after {
+    content: none;
+  }
+}
+
+/*====================================================================
+ 仕組み化サービスページ　ボタンホバーアクション追加
+ ====================================================================*/
+.container__service--common .section__service--nav ul li .jp {
+  display: block;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+.container__service--common .section__service--nav ul li .wrap:hover {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  background: #163d79;
+}
+.container__service--common .section__service--nav ul li .wrap:hover * {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .container__service--common .section__service--nav ul li a {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+/*====================================================================
+ スマホ　メニューボタン　修正
+ ====================================================================*/
+@media screen and (max-width: 768px) {
+  .nav-toggle div {
+    width: 26px;
+    height: 18px;
+  }
+}
+
+/*====================================================================
+ 下層ページ　ページタイトル部分　崩れ修正
+ ====================================================================*/
+.container__contact .wrap__title, .container__news .wrap__title, .container__voice .wrap__title, .container__company .wrap__title, .container__service .wrap__title, .container__service--common .wrap__title, .container__service--common2 .wrap__title, .container__introduce .wrap__title {
+  min-height: 300px;
+}
+.container__contact .wrap__title__main, .container__news .wrap__title__main, .container__voice .wrap__title__main, .container__company .wrap__title__main, .container__service .wrap__title__main, .container__service--common .wrap__title__main, .container__service--common2 .wrap__title__main, .container__introduce .wrap__title__main {
+  width: 328px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 60px 0 0 0 !important;
+  top: calc((100% - 200px) /2 );
+}
+@media screen and (max-width: 768px) {
+  .container__contact .wrap__title, .container__news .wrap__title, .container__voice .wrap__title, .container__company .wrap__title, .container__service .wrap__title, .container__service--common .wrap__title, .container__service--common2 .wrap__title, .container__introduce .wrap__title {
+    min-height: 200px;
+  }
+  .container__contact .wrap__title__main, .container__news .wrap__title__main, .container__voice .wrap__title__main, .container__company .wrap__title__main, .container__service .wrap__title__main, .container__service--common .wrap__title__main, .container__service--common2 .wrap__title__main, .container__introduce .wrap__title__main {
+    width: 90%;
+    max-width: 328px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 40px 0 0 0 !important;
+    top: calc((100% - 150px) /2 );
+  }
+}
+
+/*====================================================================
+ ヘッダー　位置修正
+ ====================================================================*/
+.navigation {
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    width: auto;
+  }
+  header .logo img {
+    width: auto;
+    height: 35px;
+  }
+}
+
+/*====================================================================
+ トップページ　ニュース一覧　崩れ修正+テキスト内リンクの色とアンダーバーを設定
+ ====================================================================*/
+.container__home .section__news dl dt {
+  width: 13%;
+}
+.container__home .section__news dl dd h4 a:hover {
+  text-decoration: underline;
+}
+.container__home .section__news dl dd .lead a {
+  color: #0083ba;
+  text-decoration: underline;
+}
+.container__home .section__news dl dd p.date {
+  color: #4b4b4b;
+}
+@media screen and (max-width: 768px) {
+  .container__home .section__news dl dt {
+    width: 33%;
+  }
+}
+
+/*====================================================================
+ トップページ　メインビジュアルアニメーション　PCのみ
+ ====================================================================*/
+.container__home .section__visual {
+  width: calc(100% - 50px);
+  overflow: hidden;
+}
+.container__home .section__visual img.pc {
+  -webkit-animation: mainimgPc 5s ease-out;
+  animation: mainimgPc 5s ease-out;
+}
+.container__home .section__visual img.pc_txt {
+  width: 17.63 vw;
+  position: absolute;
+  top: 39.071%;
+  left: 41.118%;
+}
+@keyframes mainimgPc {
+0% {
+-webkit-transform: scale(1.2,1.2);
+transform: scale(1.2,1.2);
+opacity: 0.6;
+}
+100% {
+-webkit-transform: none;
+transform: none;
+opacity: 1;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .container__home .section__visual {
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  .container__home .section__visual img.pc_txt {
+    display: none;
+  }
+}
+
+/*====================================================================
+ 実績紹介ページ　実績リスト　崩れ修正
+ ====================================================================*/
+.container__introduce .section__introduce ul.list > li {
+  margin-left: 1.5% !important;
+  margin-right: 1.5% !important;
+}
+.container__introduce .section__introduce ul.list li dl dd.category ul {
+  text-align: left;
+}
+.container__introduce .section__introduce ul.list li dl dd.category ul.set li:nth-child(2n) {
+  margin-left: 2%;
+}
+.container__service--common2 .wrap__title__main h2:before {
+  bottom: -50%;
+}
+@media screen and (max-width: 768px) {
+  .container__introduce .section__introduce ul.list > li {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .container__introduce .section__introduce ul.list li dl dd.category ul.set li {
+    width: 100%;
+    background: #f5f5f5 !important;
+  }
+  .container__introduce .section__introduce ul.list li dl dd.category ul.set li:nth-child(2n) {
+    margin-left: 0;
+  }
+  .container__introduce .section__introduce ul.list li dl dd.category ul.set li:nth-child(2n) {
+    background: #dedede !important;
+  }
+}
+
+/*====================================================================
+ お客様の声ページ　ページタイトル背景画像設定
+ ====================================================================*/
+.container__voice .wrap__title {
+  background-image: url(https://www.amelys.co.jp/wp-content/themes/amelys2017_v5/images/head_voice.jpg);
+}
+
+/*====================================================================
+ お客様の声ページ　コンテンツ幅調整
+ ====================================================================*/
+.container__voice .section__voice {
+  max-width: 1000px;
+}
+
+/*====================================================================
+ お客様の声ページ ページネーション
+ ====================================================================*/
+.container__voice .section__voice .wp-pagenavi {
+  text-align: center;
+}
+.container__voice .section__voice .wp-pagenavi .pages {
+  display: none;
+}
+.container__voice .section__voice .wp-pagenavi span, .container__voice .section__voice .wp-pagenavi a {
+  display: inline-block;
+  margin: 4px;
+  padding: 10px 12px;
+  color: #1c3f80;
+  line-height: 1;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid #1c3f80;
+}
+.container__voice .section__voice .wp-pagenavi span.current, .container__voice .section__voice .wp-pagenavi a:hover {
+  color: #ffffff;
+  background: #1c3f80;
+}
+@media screen and (max-width: 768px) {
+  .container__voice .section__voice .wp-pagenavi span, .container__voice .section__voice .wp-pagenavi a {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+}
+
+/*====================================================================
+ お客様の声詳細ページ スタイル設定
+ ====================================================================*/
+
+.container__voice .section__voice__single {
+  max-width: 999px;
+  margin: 0 auto 45px;
+}
+.container__voice .section__voice__single .wrap__main {
+  margin-bottom: 60px;
+}
+.container__voice .section__voice__single .wrap__lead {
+  padding: 0 90px 90px;
+}
+.container__voice .section__voice__single h1, .container__voice .section__voice__single h2, .container__voice .section__voice__single h3, .container__voice .section__voice__single h4, .container__voice .section__voice__single h5, .container__voice .section__voice__single h6 {
+  margin: 30px 0 25px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.container__voice .section__voice__single .wrap__lead p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.container__voice .section__voice__single .btn {
+  width: 420px;
+  height: 77px;
+  margin: 0 auto;
+  position: relative;
+}
+.container__voice .section__voice__single .btn:before {
+  width: 95%;
+  height: 77px;
+  content: '';
+  position: absolute;
+  border: 1px solid #163d79;
+  background: #dde9f8;
+}
+.container__voice .section__voice__single .btn a {
+  display: block;
+  color: #163d79;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+}
+.container__voice .section__voice__single .btn .wrap {
+  width: 95%;
+  height: 77px;
+  padding-top: 12px;
+  text-align: center;
+  border: 1px solid #163d79;
+  background: #fff;
+  position: absolute;
+  z-index: 5;
+  top: -5px;
+  left: -5px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.container__voice .section__voice__single .btn .wrap:hover {
+  color: #fff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  background: #163d79;
+}
+.container__voice .section__voice__single .btn .wrap:hover a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container__voice .section__voice__single {
+    margin-bottom: 0;
+  }
+  .container__voice .section__voice__single .wrap__main {
+    margin-bottom: 30px;
+  }
+  .container__voice .section__voice__single .wrap__lead {
+    padding: 4% 5% 6%;
+  }
+  .container__voice .section__voice__single h1, .container__voice .section__voice__single h2, .container__voice .section__voice__single h3, .container__voice .section__voice__single h4, .container__voice .section__voice__single h5, .container__voice .section__voice__single h6 {
+    margin: 0 0 2%;
+    font-size: 16px;
+  }
+  .container__voice .section__voice__single .wrap__lead p {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .container__voice .section__voice__single .btn {
+    width: 90%;
+    height: 55px;
+    margin: 1% auto 5%;
+    display: block;
+  }
+  .container__voice .section__voice__single .btn:before {
+    width: 100%;
+    height: 55px;
+  }
+  .container__voice .section__voice__single .btn a {
+    font-size: 14px;
+    line-height: 53px;
+  }
+  .container__voice .section__voice__single .btn .wrap {
+    width: 100%;
+    height: 55px;
+    padding-top: 0;
+  }
+}
+
+/*====================================================================
+ ニュースリリース詳細ページ　ニュースリリース内aタグ設定用
+ ====================================================================*/
+.content__info p a {
+  color: #0083ba;
+  text-decoration: underline;
+}
+p .category.ct02 h4 {
+  color: #0083ba;
+}
